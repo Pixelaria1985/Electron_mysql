@@ -1,0 +1,17 @@
+CREATE DATABASE relacion;
+USE relacion;
+
+-- Tabla de colores
+CREATE TABLE colores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    color VARCHAR(50) NOT NULL UNIQUE
+);
+
+-- Tabla de nombres con color asignado
+CREATE TABLE nombres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL UNIQUE,
+    color_id INT NOT NULL,
+    FOREIGN KEY (color_id) REFERENCES colores(id)
+);
+

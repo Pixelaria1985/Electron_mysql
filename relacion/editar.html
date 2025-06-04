@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Persona</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      margin-bottom: 16px;
+    }
+    button {
+      padding: 10px 16px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Editar Persona</h1>
+  <form id="form-edicion">
+    <input type="hidden" id="persona-id">
+
+    <label>Nombre:
+      <input type="text" id="nombre" required>
+    </label>
+
+    <label>Color:
+      <select id="color" required></select>
+    </label>
+
+    <button type="submit">Guardar</button>
+    <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+  </form>
+
+  <script src="editar.js"></script>
+</body>
+</html>
