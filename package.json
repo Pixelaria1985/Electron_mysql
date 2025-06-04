@@ -1,0 +1,37 @@
+{
+  "name": "usuaritos-app",
+  "version": "1.0.0",
+  "description": "App de escritorio con Electron y MySQL",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.electron.usuaritos",
+    "productName": "UsuaritosApp",
+    "files": [
+      "**/*",
+      "!node_modules/.cache"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "Juan Sebastian Giancaspro Arias",
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.14.1"
+  }
+}
