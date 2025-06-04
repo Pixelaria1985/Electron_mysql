@@ -103,3 +103,6 @@ usuaritos-app/
 ├── preload.js
 ├── main.js
 ├── package.json
+
+
+Cuando se descarga de GITHUB antes de todo instalar el node_modules con la instruccion "npm install"
